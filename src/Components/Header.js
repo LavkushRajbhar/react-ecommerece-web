@@ -20,7 +20,7 @@ const Header = () => {
                 <div className="container-xxl">
                     <div className="row d-flex ">
                         <div className="col-2">
-                            <h2><Link className='text-white'>Dev Corner</Link></h2>
+                            <h2><Link className='text-white text-decoration-none'>Dev - Corner</Link></h2>
                         </div>
                         <div className="col-5">
                             <div className="input-group">
@@ -78,10 +78,10 @@ const Header = () => {
                                     </div>
                                 </div>
                                 <div className="menu-links">
-                                    <div className="d-flex align-align-items-center gap-15">
+                                    <div className="d-flex align-align-items-center gap-15 fw-bolder">
                                         <NavLink to="/">Home</NavLink>
-                                        <NavLink to="/">Our Store</NavLink>
-                                        <NavLink to="/">Blogs</NavLink>
+                                        <NavLink to="/store">Our Store</NavLink>
+                                        <NavLink to="/blogs">Blogs</NavLink>
                                         <NavLink to="/">Contact</NavLink>
                                     </div>
                                 </div>
