@@ -2,6 +2,9 @@ import React from 'react'
 import Breadcrumb from '../Components/Breadcrumb'
 import Color from '../Components/Color'
 import Meta from '../Components/Meta'
+import cross from "../images/cross.svg"
+import watch from "../images/watch.jpg"
+
 const CompareProduct = () => {
     return (
         <>
@@ -12,9 +15,9 @@ const CompareProduct = () => {
                     <div className="row">
                         <div className="col-3">
                             <div className="compare-product-card position-relative">
-                                <img src="images/cross.svg" alt="" className="position-absolute cross img-fluid" />
+                                <img src={cross} alt="" className="position-absolute cross img-fluid" />
                                 <div className="product-card-image">
-                                    <img src="images/watch.jpg" alt="watch" className='img-fluid' />
+                                    <img src={watch} alt="watch" className='img-fluid' />
                                 </div>
                                 <div className="compare-product-details">
                                     <h5 className="title">Apple iPhone 14 (128 GB) - Blue</h5>
@@ -50,9 +53,9 @@ const CompareProduct = () => {
                         </div>
                         <div className="col-3">
                             <div className="compare-product-card position-relative">
-                                <img src="images/cross.svg" alt="" className="position-absolute cross img-fluid" />
+                                <img src={cross} alt="" className="position-absolute cross img-fluid" />
                                 <div className="product-card-image">
-                                    <img src="images/watch.jpg" alt="watch" className='img-fluid' />
+                                    <img src={watch} alt="watch" className='img-fluid' />
                                 </div>
                                 <div className="compare-product-details">
                                     <h5 className="title">Apple iPhone 14 (128 GB) - Blue</h5>
@@ -88,9 +91,9 @@ const CompareProduct = () => {
                         </div>
                         <div className="col-3">
                             <div className="compare-product-card position-relative">
-                                <img src="images/cross.svg" alt="" className="position-absolute cross img-fluid" />
+                                <img src={cross} alt="" className="position-absolute cross img-fluid" />
                                 <div className="product-card-image">
-                                    <img src="images/watch.jpg" alt="watch" className='img-fluid' />
+                                    <img src={watch} alt="watch" className='img-fluid' />
                                 </div>
                                 <div className="compare-product-details">
                                     <h5 className="title">Apple iPhone 14 (128 GB) - Blue</h5>

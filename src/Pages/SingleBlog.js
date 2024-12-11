@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Breadcrumb from '../Components/Breadcrumb'
 import Meta from '../Components/Meta'
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
+import blog from "../images/blog-2.jpg"
 const SingleBlog = () => {
     return (
         <>
@@ -17,7 +18,7 @@ const SingleBlog = () => {
                                 <h3 className="title">
                                     2022: A Year in Review of My Business Growth and Transformation
                                 </h3>
-                                <img src="/images/blog-2.jpg" alt="blog" className='img-fluid my-4' />
+                                <img src={blog} alt="blog" className='img-fluid my-4' />
                                 <p>
                                     2022 was a remarkable year for my business. I've made significant progress in my goals and am excited to share some of the key highlights of the year. In this article, I'll explore some of the most significant achievements and lessons learned throughout the year.
                                     <br />

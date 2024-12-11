@@ -4,6 +4,12 @@ import Breadcrumb from '../Components/Breadcrumb'
 import Color from '../Components/Color'
 import Meta from '../Components/Meta'
 import ProductCard from '../Components/ProductCard'
+import headphone from "../images/headphone.jpg"
+import watch from "../images/watch.jpg"
+import gr from "../images/gr.svg"
+import gr2 from "../images/gr2.svg"
+import gr3 from "../images/gr3.svg"
+import gr4 from "../images/gr4.svg"
 const OurStore = () => {
     const [grid, setGrid] = useState(4);
     // const gridSetter = (i) => ({
@@ -98,7 +104,7 @@ const OurStore = () => {
                                 <div>
                                     <div className="random-products d-flex gap-15 align-items-center mb-3">
                                         <div className="w-50">
-                                            <img src="images/headphone.jpg" alt="" className='img-fluid' />
+                                            <img src={headphone} alt="" className='img-fluid' />
                                         </div>
                                         <div className="w-50">
                                             <h5>Headphones with unique and vibrant sound</h5>
@@ -116,7 +122,7 @@ const OurStore = () => {
                                     </div>
                                     <div className="random-products d-flex gap-15 align-items-center">
                                         <div className="w-50">
-                                            <img src="images/watch.jpg" alt="" className='img-fluid' />
+                                            <img src={watch} alt="" className='img-fluid' />
                                         </div>
                                         <div className="w-50">
                                             <h5>Smart Watches with unique display</h5>
@@ -158,10 +164,10 @@ const OurStore = () => {
                                             21 Products
                                         </p>
                                         <div className="d-flex align-items-center grids gap-10">
-                                            <img src="images/gr4.svg" alt="" onClick={() => setGrid(3)} className='d-block img-fluid' />
-                                            <img src="images/gr3.svg" alt="" onClick={() => setGrid(4)} className='d-block img-fluid' />
-                                            <img src="images/gr2.svg" alt="" onClick={() => setGrid(6)} className='d-block img-fluid' />
-                                            <img src="images/gr.svg" alt="" onClick={() => setGrid(12)} className='d-block img-fluid' />
+                                            <img src={gr4} alt="" onClick={() => setGrid(3)} className='d-block img-fluid' />
+                                            <img src={gr3} alt="" onClick={() => setGrid(4)} className='d-block img-fluid' />
+                                            <img src={gr3} alt="" onClick={() => setGrid(6)} className='d-block img-fluid' />
+                                            <img src={gr}alt="" onClick={() => setGrid(12)} className='d-block img-fluid' />
                                         </div>
                                     </div>
 
@@ -170,15 +176,15 @@ const OurStore = () => {
                             <div className="products-list pb-5">
                                 <div className="d-flex gap-10 flex-wrap">
 
-<ProductCard grid={grid}/>
-<ProductCard grid={grid}/>
-<ProductCard grid={grid}/>
-<ProductCard grid={grid}/>
-<ProductCard grid={grid}/>
-<ProductCard grid={grid}/>
-<ProductCard grid={grid}/>
-<ProductCard grid={grid}/>
-<ProductCard grid={grid}/>
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
                                 </div>
 
                             </div>
