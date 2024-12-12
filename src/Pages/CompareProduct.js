@@ -1,6 +1,7 @@
 import React from 'react'
 import Breadcrumb from '../Components/Breadcrumb'
 import Color from '../Components/Color'
+import Container from '../Components/Container'
 import Meta from '../Components/Meta'
 import cross from "../images/cross.svg"
 import watch from "../images/watch.jpg"
@@ -10,8 +11,7 @@ const CompareProduct = () => {
         <>
             <Meta title={"Compare Product"} />
             <Breadcrumb title="Compare Product" />
-            <div className="compare-product-wrapper home-wrapper-2 py-5">
-                <div className="container-xxl">
+            <Container class1="compare-product-wrapper home-wrapper-2 py-5">
                     <div className="row">
                         <div className="col-3">
                             <div className="compare-product-card position-relative">
@@ -128,8 +128,7 @@ const CompareProduct = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+            </Container>
         </>
     )
 }

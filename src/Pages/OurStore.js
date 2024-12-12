@@ -10,6 +10,7 @@ import gr from "../images/gr.svg"
 import gr2 from "../images/gr2.svg"
 import gr3 from "../images/gr3.svg"
 import gr4 from "../images/gr4.svg"
+import Container from '../Components/Container'
 const OurStore = () => {
     const [grid, setGrid] = useState(4);
     // const gridSetter = (i) => ({
@@ -19,8 +20,7 @@ const OurStore = () => {
         <>
             <Meta title={"Our Store"} />
             <Breadcrumb title="Our Store" />
-            <div className="store-wrapper home-wrapper-2 py-5">
-                <div className="container-xxl">
+            <Container class1="store-wrapper home-wrapper-2 py-5">
                     <div className="row">
                         <div className="col-3">
                             <div className='filter-card mb-3'><h3 className="filter-title">Shop By Categories</h3>
@@ -166,8 +166,8 @@ const OurStore = () => {
                                         <div className="d-flex align-items-center grids gap-10">
                                             <img src={gr4} alt="" onClick={() => setGrid(3)} className='d-block img-fluid' />
                                             <img src={gr3} alt="" onClick={() => setGrid(4)} className='d-block img-fluid' />
-                                            <img src={gr3} alt="" onClick={() => setGrid(6)} className='d-block img-fluid' />
-                                            <img src={gr}alt="" onClick={() => setGrid(12)} className='d-block img-fluid' />
+                                            <img src={gr2} alt="" onClick={() => setGrid(6)} className='d-block img-fluid' />
+                                            <img src={gr} alt="" onClick={() => setGrid(12)} className='d-block img-fluid' />
                                         </div>
                                     </div>
 
@@ -180,18 +180,12 @@ const OurStore = () => {
                                     <ProductCard grid={grid} />
                                     <ProductCard grid={grid} />
                                     <ProductCard grid={grid} />
-                                    <ProductCard grid={grid} />
-                                    <ProductCard grid={grid} />
-                                    <ProductCard grid={grid} />
-                                    <ProductCard grid={grid} />
-                                    <ProductCard grid={grid} />
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+            </Container>
         </>
     )
 }

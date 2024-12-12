@@ -3,16 +3,18 @@ import Breadcrumb from '../Components/Breadcrumb'
 import Meta from '../Components/Meta'
 import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai'
 import { BiPhoneCall, BiInfoCircle } from 'react-icons/bi'
+import Container from '../Components/Container'
+import CustomInput from '../Components/CustomInput'
+
 const Contact = () => {
   return (
     <>
       <Meta title={"Contact"} />
       <Breadcrumb title="Contact" />
-      <div className="contact-wrapper home-wrapper-2 py-5">
-        <div className="container-xxl">
+      <Container class1="contact-wrapper home-wrapper-2 py-5">
           <div className="row">
             <div className="col-12">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15061.703498172736!2d72.85506839344147!3d19.30731776213527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b02921c6677b%3A0xb164cc17e553e965!2sBhayandar%2C%20Bhayandar%20East%2C%20Mira%20Bhayandar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1733297219247!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" className='border-0' loading="lazy" ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15061.703498172736!2d72.85506839344147!3d19.30731776213527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b02921c6677b%3A0xb164cc17e553e965!2sBhayandar%2C%20Bhayandar%20East%2C%20Mira%20Bhayandar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1733297219247!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" title="Google Maps Bhayandar Location" className='border-0' loading="lazy" ></iframe>
             </div>
             <div className="col-12 mt-5">
               <div className="contact-wrapper-2 d-flex justify-content-between">
@@ -64,8 +66,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      </Container>
     </>
   )
 }

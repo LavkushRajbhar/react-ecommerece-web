@@ -4,13 +4,13 @@ import Breadcrumb from '../Components/Breadcrumb'
 import Meta from '../Components/Meta'
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
 import blog from "../images/blog-2.jpg"
+import Container from '../Components/Container'
 const SingleBlog = () => {
     return (
         <>
             <Meta title={"Single Blog"} />
             <Breadcrumb title="Single Blog" />
-            <div className="blog-wrapper home-wrapper-2 py-5">
-                <div className="container-xxl">
+            <Container class1="blog-wrapper home-wrapper-2 py-5">
                     <div className="row">
                         <div className="col-12">
                             <div className="single-blog-card">
@@ -36,8 +36,7 @@ const SingleBlog = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+            </Container>
         </>
     )
 }

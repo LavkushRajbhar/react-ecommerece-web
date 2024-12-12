@@ -1,5 +1,6 @@
 import React from 'react'
 import Breadcrumb from '../Components/Breadcrumb'
+import Container from '../Components/Container'
 import Meta from '../Components/Meta'
 import cross from "../images/cross.svg"
 import watch from "../images/watch.jpg"
@@ -8,8 +9,7 @@ const Wishlist = () => {
     <>
       <Meta title={"Favourite Wishlist"} />
       <Breadcrumb title="Favourite Wishlist" />
-      <div className="wishlist-wrapper home-wrapper-2 py-5">
-        <div className="container-xxl">
+      <Container className="wishlist-wrapper home-wrapper-2 py-5">
           <div className="row">
             <div className="col-3">
               <div className="wishlist-card position-relative">
@@ -51,8 +51,7 @@ const Wishlist = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      </Container>
     </>
   )
 }

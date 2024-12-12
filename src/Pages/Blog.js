@@ -2,13 +2,13 @@ import React from 'react'
 import Breadcrumb from '../Components/Breadcrumb'
 import Meta from '../Components/Meta'
 import BlogCard from '../Components/BlogCard';
+import Container from '../Components/Container';
 const Blog = () => {
     return (
         <>
             <Meta title={"Blogs"} />
             <Breadcrumb title="Blogs" />
-            <div className="blog-wrapper home-wrapper-2 py-5">
-                <div className="container-xxl">
+            <Container className="blog-wrapper home-wrapper-2 py-5">
                     <div className="row">
                         <div className="col-3"><div className='filter-card mb-3'><h3 className="filter-title">Find By Categories</h3>
                             <div className="">
@@ -37,8 +37,7 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+            </Container>
         </>
     )
 }

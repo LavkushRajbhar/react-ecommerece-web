@@ -2,6 +2,7 @@
 
 import React from "react";
 import Breadcrumb from "../Components/Breadcrumb";
+import Container from "../Components/Container";
 import Meta from "../Components/Meta";
 const PrivacyPolicy = () => {
   return (
@@ -9,8 +10,7 @@ const PrivacyPolicy = () => {
     
       <Meta title={"Privacy Policy"} />
           <Breadcrumb title="Privacy Policy" />
-          <div className="privacy-policy-wrapper home-wrapper-2 py-5">
-              <div className="container-xxl">
+          <Container class1="privacy-policy-wrapper home-wrapper-2 py-5">
                   <div className="row">
                       <div className="col-12">
                           <div className="policy">
@@ -18,8 +18,7 @@ const PrivacyPolicy = () => {
                           </div>
                       </div>
                   </div>
-              </div>
-          </div>
+          </Container>
     </>
   );
 };
